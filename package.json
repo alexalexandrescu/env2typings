@@ -1,0 +1,49 @@
+{
+  "name": "env2typings",
+  "version": "1.0.0",
+  "description": "Generates TypeScript typings for environment variables from a .env file.",
+  "main": "main.js",
+  "bin": {
+    "env2typings": "./main.js"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexalexandrescu/env2typings.git"
+  },
+  "keywords": [
+    "typescript",
+    "typings",
+    "environment",
+    "variables",
+    ".env"
+  ],
+  "author": "Alex Alexandrescu",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "jest": "^29.7.0",
+    "semantic-release": "^22.0.5"
+  },
+  "release": {
+    "branches": [
+      {
+        "name": "main"
+      }
+    ],
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git",
+      "@semantic-release/github"
+    ]
+  }
+}
