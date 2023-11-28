@@ -6,6 +6,13 @@
   "bin": {
     "env2typings": "./main.js"
   },
+  "files": [
+    "main.js",
+    "cliHelper.js",
+    "envParser.js",
+    "typeGenerator.js",
+    "README.md"
+  ],
   "scripts": {
     "start": "node main.js",
     "test": "jest",
@@ -44,7 +51,7 @@
       [
         "@semantic-release/npm",
         {
-          "npmPublish": false
+          "npmPublish": true
         }
       ],
       "@semantic-release/git",
