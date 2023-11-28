@@ -1,6 +1,6 @@
 {
   "name": "env2typings",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Generates TypeScript typings for environment variables from a .env file.",
   "main": "main.js",
   "bin": {
